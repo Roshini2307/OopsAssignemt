@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+
+public class TypeSafeCollectionsDemo {
+    public static void main(String[] args) {
+        
+        // Step 1: Create a type-safe collection that can only store Integers
+        ArrayList<Integer> numbers = new ArrayList<>();
+        
+        // Step 2: Add integer values
+        numbers.add(10);
+        numbers.add(20);
+        numbers.add(30);
+        
+        // Step 3: Uncommenting this line will cause a compile-time error
+        // numbers.add("Hello"); //  Not allowed, ensures type safety
+        
+        // Step 4: Iterate and display elements
+        System.out.println("Numbers in the list:");
+        for (Integer num : numbers) {
+            System.out.println(num);
+        }
+    }
+}
+
